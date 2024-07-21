@@ -76,7 +76,7 @@ the unchanged parts are shared:
 
 ### Usage
 
-`zipper` is available for Scala 2.12, 2.13 and 3.3+. Include these lines in your `build.sbt`:
+Include these lines in your `build.sbt`:
 
 ```scala
 // for JVM
@@ -108,7 +108,7 @@ import zipper._
 case class Tree(x: Int, c: Vector[Tree] = Vector.empty)
 
 implicit val unzip: Unzip[Tree] = Unzip.For[Tree, Vector].derive
-// unzip: Unzip[Tree] = zipper.ForImplScalaVersionSpecific$For$$anon$1@782e03d6
+// unzip: Unzip[Tree] = zipper.ForImpl$For$$anon$1@4480b179
 ```
 
 The automatic derivation is powered by [shapeless](https://github.com/milessabin/shapeless).
