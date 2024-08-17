@@ -80,10 +80,10 @@ the unchanged parts are shared:
 
 ```scala
 // for JVM
-libraryDependencies += "io.github.stanch" %% "zipper" % "0.0.0+1-0fef6f20-SNAPSHOT"
+libraryDependencies += "io.github.stanch" %% "zipper" % "0.0.0+1-61f09910-SNAPSHOT"
 
 // for Scala.js
-libraryDependencies += "io.github.stanch" %%% "zipper" % "0.0.0+1-0fef6f20-SNAPSHOT"
+libraryDependencies += "io.github.stanch" %%% "zipper" % "0.0.0+1-61f09910-SNAPSHOT"
 ```
 
 #### Unzip
@@ -108,7 +108,7 @@ import zipper._
 case class Tree(x: Int, c: Vector[Tree] = Vector.empty)
 
 implicit val unzip: Unzip[Tree] = Unzip.For[Tree, Vector].derive
-// unzip: Unzip[Tree] = zipper.ForImplScalaVersionSpecific$For$$anon$1@5fc6b9a4
+// unzip: Unzip[Tree] = zipper.ForImplScalaVersionSpecific$For$$anon$1@50044f52
 ```
 
 The automatic derivation is powered by [shapeless](https://github.com/milessabin/shapeless).
